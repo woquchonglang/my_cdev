@@ -1,0 +1,6 @@
+#pragma once
+
+#define MY_CDEV_TYPE 'K'
+#define MY_CDEV_CLEAN _IO(MY_CDEV_TYPE, 0X10)
+#define MY_CDEV_GETVALUE _IOR(MY_CDEV_TYPE, 0X11, int)
+#define MY_CDEV_SETVALUE _IOR(MY_CDEV_TYPE, 0X12, int)
