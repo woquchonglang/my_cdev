@@ -22,10 +22,10 @@ load module
 sudo insmod my_cdev.ko
 ```
 
-create my dev
+create my dev (when no udev/mdev)
 
 ```sh
-sudo mknod /dev/my_cdev c 388 0
+sudo mknod /dev/my_dev0 c 388 0
 ```
 
 test the dev
@@ -37,10 +37,10 @@ sudo ./app
 
 rm modlue
 ```sh
-sudo rmmmod my_cdev
+sudo rmmod my_cdev
 ```
 
-rm my_cdev
+rm my_cdev (when no udev/mdev)
 ```sh
 sudo rm my_cdev
 ```
